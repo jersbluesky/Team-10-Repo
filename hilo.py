@@ -3,16 +3,16 @@
 # Team 10
 # Hilo
 
+
 import random
 
+#Comment here
 class Player:
-    
     def __init__(self):
         self.score = 300
-        
     def player_score(self):
         return self.score
-
+#Comment here
 class Game:
     def __init__(self):
         self.card_value = 1
@@ -22,7 +22,7 @@ class Game:
     
     def get_next_card_value(self):
         return self.next_card_value
-    
+   #Comment Here
     def is_winner(self):
         correct_answer = 1
         answer = 1
@@ -30,7 +30,7 @@ class Game:
             correct_answer = 1
         else:
             correct_answer = 2
-    
+   #Comment Here
         if self.player_choice == "l":
             answer = 2
         else:
@@ -43,16 +43,18 @@ class Game:
             
         return self.winner
         
-
+#Comment here
 player = Player()
 game = Game()
 play_again = "y"
+#Comment here
 while play_again == "y":
     print(f'The card is: {game.card_value}')
     game.player_choice = input("Higher or lower? [h/l]: ")
     game.next_card_value = random.randint(2,12)
     print(f'The next card was: {game.next_card_value}')
     game.is_winner()
+    #Comment here
     if game.winner == True:
         player.score += 100
     elif game.winner == False:
