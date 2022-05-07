@@ -30,12 +30,12 @@ class Game:
             correct_answer = 1
         else:
             correct_answer = 2
-   #Comment Here
+        #Comment here
         if self.player_choice == "l":
             answer = 2
         else:
             answer = 1
-        
+        #Comment here
         if answer == correct_answer:
             self.winner = True
         else: 
