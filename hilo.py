@@ -10,6 +10,7 @@ import random
 class Player:
     def __init__(self):
         self.score = 300
+    #Comment here
     def player_score(self):
         return self.score
 #Comment here
@@ -19,9 +20,10 @@ class Game:
         self.next_card_value = 0
         self.player_choice = " "
         self.winner = True
-    
+    #Comment here
     def get_next_card_value(self):
         return self.next_card_value
+    
    #Comment Here
     def is_winner(self):
         correct_answer = 1
