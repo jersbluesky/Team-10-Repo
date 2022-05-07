@@ -1,6 +1,6 @@
 # Assignment 3: Hilo
 # CSE210 - Brother Duane Richards
-# Team 
+# Team 10
 # Hilo
 
 import random
